@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="EJ2.css">
+</head>
+<body>
+    <div class="formulario">
+        <div class="titulo">
+            <h2>Venta de Artículo</h2>
+        </div>
+        
+        <div class="informacion">  
+            <label for="">Artículo: </label>
+            <input type="text" name="" id="articulo">
+            <label for="">Precio Unitario: </label>
+            <input type="number" name="" id="precio">
+            <label for="">Cantidad: </label>
+            <input type="number" name="" id="cantidad">
+            <button id="calcular">Agregar</button>
+            <button id="nuevo">Nuevo</button>
+        </div>
+    
+        <div class="factura">
+            <h3>Factura</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Artículo</th>
+                        <th>Cantidad</th>
+                        <th>Precio Unitario</th>
+                        <th>Sub total</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+                <tfoot id="tabla_pie">
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr>
+                        <td>Total</td>
+                        <td id="desc_total"></td>
+                    </tr>
+                    <tr>
+                        <td>Monto IGV</td>
+                        <td id="desc_igv"></td>
+                    </tr>
+                    <tr>
+                        <td>Monto Descuento</td>
+                        <td id="desc_descuento"></td>
+                    </tr>
+                    <tr>
+                        <td>Monto Bruto</td>
+                        <td id="desc_montoBruto"></td>
+                    </tr>
+                    <tr>
+                        <td>Total Pagar</td>
+                        <td id="total_pagar"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <script src="EJ2.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="styles.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            // Toggle password visibility
+            $("#eye-icon").click(function () {
+                var passwordField = $("#password");
+                var icon = $(this);
+
+                // Toggle the type attribute
+                if (passwordField.attr("type") === "password") {
+                    passwordField.attr("type", "text");
+                    icon.removeClass("fa-eye").addClass("fa-eye-slash");
+                } else {
+                    passwordField.attr("type", "password");
+                    icon.removeClass("fa-eye-slash").addClass("fa-eye");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <section class="login_section d-flex align-items-center justify-content-center">
+        <div class="login_Box shadow rounded-1">
+            <div class="logo text-center mb-4">
+                <!-- Aquí iría la imagen del logo -->
+                <h1 class="h3 pt-2 mt-1">Bienvenido de nuevo</h1>
+                <p class="small_text">Por favor, ingresa tus datos para iniciar sesión</p>
+            </div>
+
+            <div class="d-flex justify-content-between mb-4">
+                <div class="google d-flex align-items-center border border-light border-2 w-50 me-2 py-2 rounded justify-content-center">
+                    <!-- Aquí iría el botón de Google -->
+                    <img src="./img/google.png" width="25px" alt="google" />
+                    <p class="ms-2">Google</p>
+                </div>
+
+                <div class="fb d-flex align-items-center border border-light border-2 w-50 ms-2 py-2 rounded justify-content-center">
+                    <!-- Aquí iría el botón de Facebook -->
+                    <img src="./img/facebook.png" width="25px" alt="facebook" />
+                    <p class="ms-2">Facebook</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-8 text-center">
+                    <p class="small_text">O continuar con correo electrónico</p>
+                </div>
+            </div>
+            
+
+            <form>
+                <div class="login_form">
+                    <div class="form-floating mb-4">
+                        <input type="text" name="username_" class="form-control" placeholder="name@example.com"
+                            required>
+                        <label class="small_text">Ingresa tu Username</label>
+                    </div>
+
+                    <div class="form-floating position-relative mb-4">
+                        <input type="password" class="form-control" id="password" name="password_"
+                            placeholder="Password" required />
+                        <label for="password" class="small_text">Ingrese tu contraseña</label>
+                        <i id="eye-icon" class="fa fa-eye position-absolute" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="text-end mb-4">
+                        <span class="small_text link-primary">¿Olvidaste tu contraseña?</span>
+                    </div>
+
+                    <button class="btn btn-primary w-100 mb-3" type="submit">Iniciar Sesión</button>
+                    <p class="text-center small_text">
+                        ¿No tienes una cuenta? <a href="crearcuenta.html">Crear una cuenta</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
+

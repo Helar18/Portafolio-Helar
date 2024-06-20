@@ -1,0 +1,1204 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+h1 img {
+    width: 50px; /* Tamaño deseado en píxeles */
+    height: auto; /* Mantén la proporción de la imagen */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* *********************/
+/* seccion I N I C I O */
+/* *********************/
+
+#inicio {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("img/fondo.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#inicio .contenido header {
+    background-color: rgba(0, 0, 0, 1);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#inicio .contenido header .contenido-header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 20px;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+#inicio .contenido header .contenido-header p {
+    text-align: center;
+    color: #ff5080; /* Color rosa */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 0; /* Eliminar márgenes predeterminados */
+}
+
+#inicio .contenido header .contenido-header h1 {
+    text-align: center;
+    color: #ff5080;
+}
+
+#inicio .contenido header .contenido-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header nav ul li a:hover {
+    color: #ff5080;
+}
+
+
+
+#inicio .contenido .presentacion {
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio .contenido .presentacion .bienvenida {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#inicio .contenido .presentacion h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion h2 span {
+    font-size: 25px;
+    color: #ff5080;
+}
+
+#inicio .contenido .presentacion .descripcion {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#inicio .contenido .presentacion a:hover {
+    background-color: #ff5080;
+}
+
+#links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+#links li {
+    margin: 0 10px;
+    position: relative;
+}
+
+#links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+#links li a:hover,
+#links li a.seleccionado {
+    color: #ff5080;
+}
+
+#links li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #ff5080;
+    transition: width 0.3s ease;
+}
+
+#links li a:hover::after,
+#links li a.seleccionado::after {
+    width: 100%;
+}
+
+#icono-nav {
+    color: #fff;
+    display: none;
+}
+
+/* *********************/
+/* seccion S O B R E  M I */
+/* *********************/
+
+#sobremi {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    padding-top: 130px;
+    padding-bottom: 50px;
+    color: #000000;
+    display: flex;
+}
+
+#sobremi .contenedor-foto {
+    max-width: 400px;
+    margin-right: 80px;
+}
+
+#sobremi .contenedor-foto img {
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+}
+
+#sobremi .sobremi {
+    margin: 0 40px;
+
+}
+
+#sobremi .sobremi .titulo-seccion {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #000; /* Color negro */
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#sobremi .sobremi h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#sobremi .sobremi h2 span {
+    color: #ff5080;
+}
+
+#sobremi .sobremi h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#sobremi .sobremi p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+}
+
+#sobremi .sobremi a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-right: 30px; /* Ajusta el margen entre los enlaces */
+}
+#sobremi .sobremi a:hover {
+    background-color: #ff5080;
+    color: #fff;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.contenedor-foto img {
+    background-color: #f3f3f3;
+}
+
+/* *********************/
+/* seccion S E R V I C I O S */
+/* *********************/
+
+#servicios {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+    
+}
+
+#servicios .titulo-seccion {
+    font-size: 28px; /* Aumenta el tamaño del título */
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+    margin-top: 20px;
+    margin-bottom: 0px; /* Aumenta el espacio inferior del título */
+}
+
+/* Contenedor de iconos */
+.contenedor-iconos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los iconos se envuelvan en múltiples líneas */
+    justify-content: space-between; /* Ajusta el espacio entre los iconos */
+    max-width: 800px; /* Ancho máximo para los iconos */
+    margin: 0 auto 60px; /* Margen inferior */
+}
+
+/* Estilo para cada icono individual */
+.contenedor-iconos .icono-html,
+.contenedor-iconos .icono-css,
+.contenedor-iconos .icono-js,
+.contenedor-iconos .icono-bootstrap {
+    flex-basis: calc(50% - 20px); /* Ancho del contenedor, menos el espacio entre ellos */
+    max-width: 280px; /* Ancho máximo para los iconos */
+    height: 145px; /* Alto del contenedor */
+    background-color: #000000; /* Fondo del contenedor negro */
+    border: 2px solid #ffffff; /* Borde blanco alrededor del fondo negro */
+    border-radius: 30px; /* Bordes redondeados */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px; /* Espacio inferior entre los iconos */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada alrededor del contenedor */
+    transition: transform 0.3s ease-in-out; /* Transición suave al hacer hover */
+}
+
+.contenedor-iconos .icono-html:hover,
+.contenedor-iconos .icono-css:hover,
+.contenedor-iconos .icono-js:hover,
+.contenedor-iconos .icono-bootstrap:hover {
+    transform: translateY(-10px); /* Efecto de levantamiento al hacer hover */
+}
+
+/* Estilo para el ícono dentro de cada contenedor */
+.contenedor-iconos i {
+    font-size: 80px; /* Tamaño del ícono */
+    margin-bottom: 10px; /* Espacio inferior entre el ícono y el nombre */
+    
+}
+
+/* Estilo para el nombre del icono */
+.contenedor-iconos .nombre-icono {
+    font-weight: bold; /* Texto en negrita */
+    color: #ffffff; /* Color del texto */
+    font-size: 18px; /* Tamaño del texto */
+}
+
+/* Colores específicos para cada icono */
+.contenedor-iconos .icono-html {
+    color: #e44d26; /* Color de HTML */
+}
+
+.contenedor-iconos .icono-css {
+    color: #2965f1; /* Color de CSS */
+}
+
+.contenedor-iconos .icono-js {
+    color: #f7df1e; /* Color de JavaScript */
+}
+
+.contenedor-iconos .icono-bootstrap {
+    color: #563d7c; /* Color de Bootstrap */
+}
+
+#nav .boton-modo{
+      margin: 0 auto; 
+    position: absolute;  right: 20px; top:10px;
+}
+ 
+
+/* *********************/
+/* seccion S K I L L S */
+/* *********************/
+
+.contenedor-skills h3 {
+    margin-bottom: 50px; /* Aumenta el espacio inferior del título */
+}
+
+.contenedor-skills {
+    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.8)), url("img/fondo-skills.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    background-position: center center;
+    padding: 150px 0; /* Aumenta el padding superior e inferior */
+    text-align: center;
+}
+
+.contenedor-skills .skill {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.contenedor-skills .skill .info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-skills .skill .lista {
+    display: inline-block;
+    margin-right: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+}
+
+.contenedor-skills .skill .barra {
+    width: 100%;
+    height: 6px;
+    margin: 10px 0px;
+    background-color: #919191;
+}
+
+.contenedor-skills .skill .barra .barra-progreso1 {
+    background-color: #e44d26; /* Color para la primera barra de progreso */
+    width: 0%;
+    height: 100%;
+    animation: progreso1 2s forwards;
+}
+
+.contenedor-skills .skill .barra .barra-progreso2 {
+    background-color: #2965f1; /* Color para la segunda barra de progreso */
+    width: 0%;
+    height: 100%;
+    animation: progreso2 2s forwards;
+}
+
+.contenedor-skills .skill .barra .barra-progreso3 {
+    background-color: #f7df1e; /* Color para la tercera barra de progreso */
+    width: 0%;
+    height: 100%;
+    animation: progreso3 2s forwards;
+}
+
+/* Animación para las barras de progreso */
+@keyframes progreso1 {
+    from { width: 0%; }
+    to { width: 80%; }
+}
+
+@keyframes progreso2 {
+    from { width: 0%; }
+    to { width: 70%; }
+}
+
+@keyframes progreso3 {
+    from { width: 0%; }
+    to { width: 90%; }
+}
+
+
+
+.contenedor-skills .skill .barra .barra-progreso4 {
+    background-color: #563d7c; /* Color para la cuarta barra de progreso */
+    width: 0%;
+    height: 100%;
+    animation: progreso4 2s forwards;
+}
+
+@keyframes progreso1 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 75%; /* Cambia el ancho al 75% para la primera barra */
+    }
+}
+
+@keyframes progreso2 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%; /* Cambia el ancho al 50% para la segunda barra */
+    }
+}
+
+@keyframes progreso3 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 35%; /* Cambia el ancho al 35% para la tercera barra */
+    }
+}
+
+@keyframes progreso4 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 45%; /* Cambia el ancho al 45% para la cuarta barra */
+    }
+}
+
+/* *********************/
+/* seccion P O R T F O L I O */
+/* *********************/
+        
+#portfolio {
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+}
+
+#portfolio .titulo-seccion {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+    margin-top: 20px;
+}
+
+#portfolio .fila {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+#portfolio .proyecto {
+    width: calc(50% - 20px);
+    max-width: 450px;
+    margin: 10px auto; /* Centrará el proyecto cuando haya uno en la fila */
+    position: relative;
+    overflow: hidden;
+    border: 6px solid #ffffff; /* Borde blanco un poco más grueso */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Sombras más visibles */
+    background-color: #000000; /* Fondo negro */
+    transition: transform .5s;
+}
+
+#portfolio .proyecto:hover {
+    transform: scale(1.05); /* Agrandar ligeramente la tarjeta al pasar el ratón */
+}
+
+#portfolio .proyecto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 9px; /* Ajuste para evitar que las esquinas de la imagen sobresalgan */
+}
+
+#portfolio .proyecto .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con opacidad */
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity .5s, transform .5s;
+    opacity: 0;
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+#portfolio .proyecto:hover .info {
+    opacity: 1;
+    transform: scale(1); /* Tamaño final más grande */
+}
+
+#portfolio .proyecto .info h4, #portfolio .proyecto .info p {
+    transition: transform .5s;
+}
+
+#portfolio .proyecto:hover .info h4, #portfolio .proyecto:hover .info p {
+    transform: scale(1.1); /* Agrandar texto al pasar el ratón */
+}
+
+#portfolio .proyecto .info h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#portfolio .proyecto .info p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+    max-width: 80%; /* Limitar el ancho del texto */
+}
+
+/* *********************/
+/* seccion P R O Y E C T O S */
+/* *********************/
+#proyectos {
+    max-width: 1100px;
+    padding: 40px 0;
+    margin: auto;
+}
+
+#proyectos .titulo-seccion {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#proyectos .fila {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+#proyectos .mio {
+    width: calc(50% - 20px);
+    max-width: 450px;
+    margin: 10px auto; /* Centra el proyecto cuando haya uno en la fila */
+    position: relative;
+    overflow: hidden;
+    border: 6px solid #ffffff; /* Borde blanco un poco más grueso */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Sombras más visibles */
+    background-color: #000000; /* Fondo negro */
+    transition: transform .5s;
+}
+
+#proyectos .mio:hover {
+    transform: scale(1.05); /* Agrandar ligeramente la tarjeta al pasar el ratón */
+}
+
+#proyectos .mio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 9px; /* Ajuste para evitar que las esquinas de la imagen sobresalgan */
+    filter: grayscale(100%); /* Convertir la imagen a escala de grises */
+    transition: filter .5s; /* Transición suave del filtro */
+}
+
+#proyectos .mio:hover img {
+    filter: none; /* Quitar el filtro de escala de grises al pasar el ratón */
+}
+
+#proyectos .mio .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con opacidad */
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity .5s, transform .5s;
+    opacity: 0;
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+#proyectos .mio:hover .info {
+    opacity: 1;
+    transform: scale(1); /* Tamaño final más grande */
+}
+
+#proyectos .mio .info h4, #proyectos .mio .info p {
+    transition: transform .5s;
+}
+
+#proyectos .mio:hover .info h4, #proyectos .mio:hover .info p {
+    transform: scale(1.1); /* Agrandar texto al pasar el ratón */
+}
+
+#proyectos .mio .info h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#proyectos .mio .info p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+    max-width: 80%; /* Limitar el ancho del texto */
+}
+
+
+
+
+
+
+
+
+/* *********************/
+/* seccion C O N T A C T O */
+/* *********************/
+        
+/* Estilos para la sección de contacto */
+#contacto {
+    padding: 100px 15px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-top: 100px; /* Ajuste para separar de la sección anterior */
+}
+
+#contacto .titulo-seccion {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#contacto .contenedor-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #343a40;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#contacto .contenedor-form::before,
+#contacto .contenedor-form::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 80%);
+    transform: rotate(0deg);
+    z-index: 1;
+    pointer-events: none;
+    animation: giro 6s infinite linear;
+}
+
+@keyframes giro {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#contacto .contenedor-form:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los campos de entrada y área de texto con bordes redondeados */
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto input[type="tel"],
+#contacto textarea {
+    width: calc(100% - 10px);
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Bordes redondeados */
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box; /* Para incluir padding y border en el ancho */
+}
+
+#contacto input[type="text"]:focus,
+#contacto input[type="email"]:focus,
+#contacto input[type="tel"]:focus,
+#contacto textarea:focus {
+    border-color: #ff5080;
+}
+
+/* Estilos para el botón de enviar */
+#contacto .btn-enviar {
+    background-color: #ff5080;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 25px; /* Ajuste del radio para curvas */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    outline: none; /* Eliminar el borde del botón al hacer clic */
+}
+
+#contacto .btn-enviar:hover {
+    background-color: #e4405f;
+}
+
+
+/* *********************/
+/* seccion F O O T E R */
+/* *********************/
+        
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer .redes {
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes a {
+    text-decoration: none;
+    color: #fff;
+    margin: 5px;
+    font-size: 26px;
+}
+
+#nav .x_cerrar{
+    display: none;
+}
+
+
+
+
+
+/* *********************/
+/* seccion R E S P O N S I V E */
+/* *********************/
+        
+@media screen and (max-width: 800px) {
+    #nav .x_cerrar{
+        display: block;
+    }
+    
+
+    .redes {
+        display: none;
+    }
+
+    nav {
+        display: none;
+        
+    }
+
+    nav.responsive {
+        display: block;
+        background-color: rgba(0, 0, 0, 1);
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        padding: 10px 0;
+        height: 100vh;
+        
+        
+    }
+
+    nav.responsive ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav.responsive ul li {
+        margin: 10px 0; /* Espacio vertical entre elementos */
+        position: relative;
+    }
+
+    nav.responsive ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 400;
+        transition: color 0.3s ease;
+        font-size: 18px; /* Tamaño de fuente */
+        padding: 15px 20px; /* Espaciado interno */
+        display: block; /* Convertir enlaces en bloques para ocupar todo el ancho disponible */
+        width: 100%; /* Ocupar todo el ancho del contenedor */
+        text-align: center; /* Centrar el texto */
+    }
+
+    nav.responsive ul li a:hover,
+    nav.responsive ul li a.seleccionado {
+        color: #ff5080;
+    }
+
+
+
+    nav.responsive ul li a:hover::after,
+    nav.responsive ul li a.seleccionado::after {
+        width: calc(100% - 40px); /* Ancho al 100% menos el padding */
+    }
+
+    #icono-nav {
+        display: block;
+        color: #fff;
+        font-size: 24px; /* Tamaño del icono */
+        cursor: pointer;
+        text-align: center; /* Alineación del ícono */
+        padding: 10px 0; /* Espaciado interno */
+    }
+
+    #inicio .contenido .presentacion h2 {
+        font-size: 40px;
+    }
+}
+
+    /* seccion SOBRE MI */
+    @media screen and (max-width: 800px) {
+        #nav .boton-modo{
+            position: static; 
+        }
+
+        #sobremi {
+            max-width: 100%;
+            padding: 60px 15px; /* Ajuste del padding */
+            flex-direction: column; /* Cambia a disposición de columna */
+            align-items: center; /* Centra los elementos */
+            text-align: center; /* Centra el texto */
+        }
+    
+        #sobremi .contenedor-foto {
+            max-width: 100%;
+            margin-right: 0;
+            margin-bottom: 40px; /* Espacio inferior */
+        }
+    
+        #sobremi .contenedor-foto img {
+            padding: 15px; /* Ajuste del padding */
+            border-radius: 15px; /* Reducción del radio de borde */
+        }
+    
+        #sobremi .sobremi {
+            margin: 0; /* Elimina el margen horizontal */
+        }
+    
+        #sobremi .sobremi .titulo-seccion {
+            font-size: 18px; /* Reducción del tamaño del título */
+            text-decoration: none; /* Elimina la subrayado */
+            margin-bottom: 20px; /* Espacio inferior */
+        }
+    
+        #sobremi .sobremi h2 {
+            font-size: 28px; /* Reducción del tamaño del título */
+            margin: 15px 0; /* Ajuste del margen */
+        }
+    
+        #sobremi .sobremi h3 {
+            font-size: 16px; /* Reducción del tamaño del título */
+            margin-bottom: 15px; /* Espacio inferior */
+        }
+    
+        #sobremi .sobremi p {
+            font-size: 14px; /* Reducción del tamaño del texto */
+            line-height: 1.6; /* Espaciado entre líneas */
+            margin-bottom: 10px; /* Espacio inferior */
+        }
+    
+        #sobremi .sobremi a {
+            display: block;
+            width: 50%;
+            text-align: center; /* Alinea el texto al centro dentro del enlace */
+            margin: 20px auto; /* Ajusta el margen para centrar los enlaces */
+            margin-bottom: 20px; /* Espacio entre cada enlace */
+        }
+    }
+    
+    /* seccion MIS SERVICIOS */
+    #servicios {
+        padding: 100px 15px;
+    }
+    #servicios .fila {
+        display: block;
+    }
+    #servicios .fila .servicio {
+        margin: 10px auto;
+    }
+    @media (max-width: 768px) {
+        /* Ajustes para dispositivos móviles */
+        .contenedor-iconos .icono-html,
+        .contenedor-iconos .icono-css,
+        .contenedor-iconos .icono-js,
+        .contenedor-iconos .icono-bootstrap {
+            flex-basis: calc(50% - 10px);
+            max-width: 140px;
+            height: 120px;
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+    
+        .contenedor-iconos {
+            justify-content: space-around;
+            margin-bottom: 40px; /* Ajusta el espacio entre las filas */
+        }
+    
+        .contenedor-iconos .nombre-icono {
+            font-size: 14px;
+        }
+    }
+    /* seccion HABLIDADES  */
+    .contenedor-skills {
+        padding: 50px 20px;
+    }
+    /* seccion PORTFOLIO */
+@media screen and (max-width: 800px) {
+    #portfolio {
+        max-width: 100%;
+        padding: 60px 15px;
+        margin: auto;
+    }
+
+    #portfolio .titulo-seccion {
+        font-size: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #111135;
+        text-decoration: underline;
+        text-decoration-color: #d3d3f3;
+        text-decoration-thickness: 5px;
+        margin-bottom: 40px;
+        margin-top: 60px;
+    }
+
+    #portfolio .fila {
+        display: grid;
+        grid-template-columns: 1fr; /* Mostrar un proyecto por fila */
+        gap: 20px;
+        justify-items: center; /* Centrar los items horizontalmente */
+    }
+
+    #portfolio .proyecto {
+        width: 100%;
+        max-width: 450px;
+        border: 1px solid #000;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        min-height: 300px; /* Aumentar la altura mínima */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #portfolio .proyecto:hover {
+        transform: translateY(-5px);
+    }
+
+    #portfolio .proyecto img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+        max-height: 200px; /* Limitar la altura máxima para mantener proporción */
+    }
+
+    #portfolio .info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; /* Asegurar que la info cubra toda la altura del proyecto */
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 15px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 0 0 10px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #portfolio .proyecto:hover .info {
+        opacity: 1;
+    }
+
+    #portfolio .info h4 {
+        margin: 0;
+        color: #fff;
+        font-size: 18px; /* Tamaño de fuente reducido */
+        font-weight: 500;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    #portfolio .info p {
+        margin: 5px 0 0;
+        color: #fff;
+        font-size: 14px; /* Tamaño de fuente reducido */
+        text-align: center;
+    }
+}
+
+/* Ajustes para dispositivos muy pequeños */
+@media screen and (max-width: 400px) {
+    #portfolio .proyecto {
+        min-height: 400px; /* Aumentar la altura mínima aún más */
+    }
+
+    #portfolio .info h4 {
+        font-size: 16px; /* Reducir más el tamaño de la fuente */
+    }
+
+    #portfolio .info p {
+        font-size: 12px; /* Reducir más el tamaño de la fuente */
+    }
+}
+
+    
+    /* seccion CONTACTO */
+    #contacto {
+        padding: 50px 15px;
+    }
+    #contacto .contenedor-form .mitad {
+        margin-bottom: 15px;
+        display: block;
+    }
+    #contacto .contenedor-form .mitad input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+
+/* Media query para tamaños de pantalla menores */
+@media (max-width: 768px) {
+    footer .redes {
+        flex-wrap: wrap;
+    }
+
+    #portfolio .fila {
+        flex-direction: column;
+    }
+
+    #portfolio .fila .proyecto {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+/* Media query para tamaños de pantalla menores */
+@media (max-width: 768px) {
+    .contacto-whatsapp {
+    bottom: 105px; /* Ajustado a 90px desde el borde inferior en pantallas más pequeñas */
+    }
+    }
+
+/* Estilo general del footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    
+    color: #6c757d;
+}
+
+/* Estilo de los enlaces de redes sociales */
+footer .redes a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Efecto hover para los iconos de redes sociales */
+footer .redes a:hover i {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+/* Parte responsive */
+@media screen and (max-width: 600px) {
+    footer p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    footer .redes {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    footer .redes a {
+        margin: 5px;
+        font-size: 20px;
+    }
+}
+
+
+

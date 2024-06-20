@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.formulario {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.titulo {
+    background-color: rgb(180, 180, 192);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    word-wrap: break-word;
+    border-radius: 10px;
+}
+
+.informacion, .factura {
+    width: 100%;
+    background-color: rgb(172, 91, 91);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.informacion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.informacion label {
+    text-align: left;
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+.informacion input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.informacion button {
+    width: 100%;
+    padding: 10px;
+    background-color: #16c0b2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.informacion button:hover {
+    background-color: #06887d;
+}
+
+.factura {
+    overflow-x: auto; /* Agregando barra de desplazamiento horizontal */
+}
+
+.factura table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+}
+
+.factura th, .factura td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.factura th {
+    background-color: #f2f2f2;
+}
+
+tfoot {
+    color: black;
+}
+
+@media (min-width: 600px) {
+    .informacion {
+        flex-direction: row;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .informacion label {
+        text-align: left;
+        align-self: center;
+        flex-basis: 120px;
+    }
+
+    .informacion input[type="text"],
+    .informacion input[type="number"] {
+        width: 100%;
+    }
+
+    .informacion button {
+        width: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .titulo {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .informacion, .factura {
+        padding: 15px;
+    }
+
+    .informacion label {
+        text-align: left;
+        align-self: start;
+    }
+
+    .informacion input[type="text"],
+    .informacion input[type="number"],
+    .informacion button {
+        padding: 10px;
+    }
+}

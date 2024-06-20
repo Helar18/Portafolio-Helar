@@ -1,0 +1,180 @@
+/* Estilos generales */
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    background-image: url('img/fondo-1.avif'); /* Cambia 'img/fondo_login.jpg' por la ruta real de tu imagen */
+    background-size: cover; /* Esto asegura que la imagen cubra toda el área de la pantalla */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Estilos para la sección de inicio de sesión */
+.login_section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Añade un poco de padding para que la caja no toque los bordes */
+}
+
+.login_Box {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(245, 228, 228, 0.8); /* Fondo semitransparente para la caja de login */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(173, 15, 15, 0.1);
+    border-radius: 8px; /* Añade bordes redondeados */
+    text-align: center; /* Centra el contenido del login box */
+}
+
+.logo img {
+    max-width: 100px;
+    margin-bottom: 20px;
+    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+}
+
+.google,
+.fb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.google img,
+.fb img {
+    width: 25px;
+    height: auto;
+    margin-right: 5px;
+    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+}
+
+.google p,
+.fb p {
+    margin: 0; /* Elimina el margen del párrafo */
+}
+
+.google:hover,
+.fb:hover {
+    background-color: #e6cdcd;
+}
+
+/* Estilos para el formulario de registro */
+.login_form {
+    margin-top: 20px;
+}
+
+.form-floating {
+    position: relative;
+}
+
+.form-floating input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.form-floating label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #999999;
+    font-size: 0.9em;
+    pointer-events: none;
+    transition: 0.3s ease-out;
+}
+
+.form-floating input:focus + label,
+.form-floating input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 0.8em;
+    color: #333333;
+}
+
+/* Estilos para el ícono del ojo */
+.form-floating.position-relative i.fa.fa-eye.position-absolute {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #999999;
+}
+
+.form-floating.position-relative i.fa.fa-eye-slash.position-absolute {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #999999;
+}
+
+.form-floating.position-relative i.fa.fa-eye.position-absolute:hover,
+.form-floating.position-relative i.fa.fa-eye-slash.position-absolute:hover {
+    color: #333333;
+}
+
+/* Estilos para los botones */
+.btn-primary {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Estilos específicos para "O continuar con correo electrónico" */
+.row.justify-content-center .col-md-8 .small_text {
+    font-size: 0.9em;
+    color: #666666;
+    position: relative;
+    display: inline-block; /* Hace que los pseudo-elementos se ajusten al contenido */
+}
+
+.row.justify-content-center .col-md-8 .small_text::before,
+.row.justify-content-center .col-md-8 .small_text::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background-color: #666666;
+}
+
+.row.justify-content-center .col-md-8 .small_text::before {
+    left: -20%;
+}
+
+.row.justify-content-center .col-md-8 .small_text::after {
+    right: -20%;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .login_section {
+        padding: 10px; /* Reducir el relleno en pantallas más pequeñas */
+    }
+
+    .login_Box {
+        padding: 20px; /* Ajustar el relleno del formulario en pantallas más pequeñas */
+    }
+
+    .small_text {
+        font-size: 0.8em; /* Reducir el tamaño del texto pequeño en pantallas más pequeñas */
+    }
+
+    .form-floating label {
+        font-size: 0.8em; /* Reducir el tamaño de las etiquetas de los inputs en pantallas más pequeñas */
+    }
+
+    body {
+        background-position: top; /* Centrar la imagen de fondo en la parte superior en pantallas más pequeñas */
+    }
+}

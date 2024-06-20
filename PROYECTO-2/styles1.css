@@ -1,0 +1,133 @@
+/* Estilos generales */
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    background-image: url('img/fondo-1.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; /* Asegura que el cuerpo ocupe toda la altura */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+}
+
+/* Estilos para la sección de registro */
+.login_section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login_Box {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(245, 228, 228, 0.8);
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Añade bordes redondeados */
+    text-align: center; /* Centra el contenido del login box */
+}
+
+.logo img {
+    max-width: 100px;
+    margin-bottom: 20px;
+    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+}
+
+.small_text {
+    font-size: 0.9em;
+    color: #666666;
+}
+
+/* Estilos para el formulario de registro */
+.signup-form__form {
+    margin-top: 20px;
+}
+
+.signup-form__title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.signup-form__form .login_form {
+    margin-top: 20px;
+}
+
+.signup-form__form .form-floating {
+    position: relative;
+}
+
+.signup-form__form .form-floating input {
+    width: calc(100% - 30px); /* Ajusta el ancho del input para compensar el espacio del ícono */
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    padding-right: 30px; /* Añade espacio a la derecha para el ícono */
+}
+
+.signup-form__form .form-floating label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #999999;
+    font-size: 0.9em;
+    pointer-events: none;
+    transition: 0.3s ease-out;
+}
+
+.signup-form__form .form-floating input:focus + label,
+.signup-form__form .form-floating input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 0.8em;
+    color: #333333;
+}
+
+/* Estilos para el ícono del ojo y usuario */
+.signup-form__form .position-absolute {
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #999999;
+}
+
+.signup-form__form .fa-user {
+    color: #007bff; /* Color azul para el ícono de usuario */
+}
+
+.signup-form__form .fa-lock {
+    color: #28a745; /* Color verde para el ícono de candado */
+}
+
+
+/* Estilos para los botones */
+.signup-form__form .btn {
+    width: 100%;
+}
+
+.signup-form__form .signup-form__btn-login {
+    margin-top: 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .login_section {
+        padding: 10px; /* Reducir el relleno en pantallas más pequeñas */
+    }
+
+    .login_Box {
+        padding: 20px; /* Ajustar el relleno del formulario en pantallas más pequeñas */
+    }
+
+    .small_text {
+        font-size: 0.8em; /* Reducir el tamaño del texto pequeño en pantallas más pequeñas */
+    }
+
+    .signup-form__form .form-floating label {
+        font-size: 0.8em; /* Reducir el tamaño de las etiquetas de los inputs en pantallas más pequeñas */
+    }
+}

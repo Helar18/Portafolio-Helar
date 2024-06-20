@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Sidebar Menu</title>
+</head>
+
+<body>
+    <aside class="aside active" id="aside">
+        <div class="head">
+            <div class="profile">
+                <img src="Imagen01.jpg">
+                <p>Helar Chero</p>
+            </div>
+            <i class='bx bx-menu' id="menu"></i>
+        </div>
+        <div class="Options">
+            <div class="opcion opcion_principal" id="dashboard1">
+                <i class='bx bxs-dashboard'></i>
+                <span class="options">Dashboard</span>
+            </div>
+
+            <div class="submenu" id="submenu1">
+                <div class="">
+                    <i class="bx bx-caret-down-square"></i>
+                    <span class="options">Resumen de ventas</span>
+                </div>
+
+                <div class="">
+                    <i class="bx bx-caret-down-square"></i>
+                    <span class="options">Métricas de usuarios</span>
+                </div>
+            </div>
+
+            <div class="opcion" id="dashboard2">
+                <i class="bx bx-user"></i>
+                <span class="options">Usuarios</span>
+            </div>
+
+            <div class="submenu" id="submenu2">
+                <div class="">
+                    <i class="bx bx-caret-down-square"></i>
+                    <span class="options" id="showUserForm">Agregar nuevo usuario</span>
+                </div>
+
+                <div class="">
+                    <i class="bx bx-caret-down-square"></i>
+                    <span class="options" id="showUserList">Ver lista de usuarios</span>
+                </div>
+            </div>
+
+            <div class="opcion" id="dashboard3">
+                <i class="bx bx-line-chart"></i>
+                <span class="options">Analíticos</span>
+            </div>
+
+            <div class="submenu" id="submenu3">
+                <div class="">
+                    <i class="bx bx-caret-down-square"></i>
+                    <span class="options">Análisis de tráfico del sitio web</span>
+                </div>
+
+                <div class="">
+                    <i class="bx bx-caret-down-square"></i>
+                    <span class="options">Seguimiento de conversiones</span>
+                </div>
+            </div>
+
+            <div class="opcion" id="dashboard4">
+                <i class="bx bx-message-square"></i>
+                <span class="options">Mensajes</span>
+            </div>
+
+            <div class="submenu" id="submenu4">
+                <div class="">
+                    <i class="bx bx-caret-down-square"></i>
+                    <span class="options">Bandeja de entrada</span>
+                </div>
+
+                <div class="">
+                    <i class="bx bx-caret-down-square"></i>
+                    <span class="options">Mensajes enviados</span>
+                </div>
+            </div>
+
+            <div class="opcion" id="dashboard5">
+                <i class="bx bxs-file-blank"></i>
+                <span class="options">Archivos</span>
+            </div>
+
+            <div class="submenu" id="submenu5">
+                <div class="">
+                    <i class="bx bx-caret-down-square"></i>
+                    <span class="options">Subir archivos</span>
+                </div>
+
+                <div class="">
+                    <i class="bx bx-caret-down-square"></i>
+                    <span class="options">Carpeta de archivos compartidos</span>
+                </div>
+            </div>
+
+            <div class="opcion" id="dashboard6">
+                <i class="bx bx-cart"></i>
+                <span class="options">Pedidos</span>
+            </div>
+
+            <div class="submenu" id="submenu6">
+                <div class="">
+                    <i class="bx bx-caret-down-square"></i>
+                    <span class="options">Detalles del pedido</span>
+                </div>
+
+                <div class="">
+                    <i class="bx bx-caret-down-square"></i>
+                    <span class="options">Historial de pedidos</span>
+                </div>
+            </div>
+
+            <div class="opcion" id="dashboard7">
+                <i class="bx bx-heart"></i>
+                <span class="options">Favoritos</span>
+            </div>
+
+            <div class="submenu" id="submenu7">
+                <div class="">
+                    <i class="bx bx-caret-down-square"></i>
+                    <span class="options">Gestionar favoritos</span>
+                </div>
+
+                <div class="">
+                    <i class="bx bx-caret-down-square"></i>
+                    <span class="options">Elementos marcados como favoritos</span>
+                </div>
+            </div>
+
+            <div class="opcion" id="dashboard8">
+                <i class="bx bx-cog"></i>
+                <span class="options">Configuración</span>
+            </div>
+
+            <div class="submenu" id="submenu8">
+                <div class="">
+                    <i class="bx bx-caret-down-square"></i>
+                    <span class="options">Cambiar contraseña</span>
+                </div>
+
+                <div class="">
+                    <i class="bx bx-caret-down-square"></i>
+                    <span class="options">Configuración de notificaciones</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+    <script src="menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
